@@ -1,0 +1,150 @@
+/* Importación de fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header y Navegación */
+.header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #a0c9ff;
+}
+
+/* Sección de Bienvenida (Hero) */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #e9ecef;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Secciones de Contenido */
+.section {
+    padding: 60px 0;
+}
+
+.section h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.bg-light {
+    background-color: #e9ecef;
+}
+
+/* Tarjetas y Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 45%; /* Permite que las tarjetas se adapten */
+    text-align: center;
+}
+
+/* Pie de Página */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Diseño Responsivo para móviles */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .nav-item {
+        margin: 5px 0;
+    }
+    .hero {
+        padding: 60px 20px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
